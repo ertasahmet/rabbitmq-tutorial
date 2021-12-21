@@ -14,7 +14,7 @@ namespace UdemyRabbitMq.Publisher
         {
             // Önce bir factory açtık ve sunucudaki rabbitmq'ye bağlandık.
             var factory = new ConnectionFactory();
-            factory.Uri = new Uri("amqps://auquzjtr:Evb7eHXP46nBaFkehBraF8Xw_tRjOGwZ@fox.rmq.cloudamqp.com/auquzjtr");
+            factory.Uri = new Uri("");
             using var connection = factory.CreateConnection();
 
             var channel = connection.CreateModel();
